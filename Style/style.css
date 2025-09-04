@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px gold;
+}
+
+.hero {
+  background: url("img/vegas-bg.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 20px gold, 0 0 40px black;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  margin: 5px 0;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: gold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sponsors img {
+  max-height: 80px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+
+.sponsors img:hover {
+  filter: brightness(1) invert(0);
+}
+
+video {
+  max-width: 90%;
+  border: 2px solid gold;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+footer {
+  background: black;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+footer h2 {
+  color: gold;
+}
+
+footer a {
+  color: gold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px gold;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.socials a {
+  font-size: 1.2rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: gold;
+  text-shadow: 0 0 10px gold;
+}
