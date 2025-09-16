@@ -3,98 +3,229 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maturitní ples 2025/26</title>
+    <title>Maturita SOUEPL</title>
     <link rel="stylesheet" href="Style/style.css" />
     <script src="Script/script.js" defer></script>
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#info">Info</a></li>
-        <li><a href="#program">Program</a></li>
-        <li><a href="#maturanti">Maturanti</a></li>
-        <li><a href="#ceny">Lístky</a></li>
-        <li><a href="#sponzori">Sponzoři</a></li>
-        <li><a href="#skola">O škole</a></li>
-        <li><a href="#ucitele">O naších učitelých</a></li>
-        <li><a href="#videa">Videa</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-
-    <header id="info" class="hero">
-      <h1>Maturitní ples 2025/26</h1>
-      <p>Zveme vás na náš maturitní ples 🎉</p>
-      <p><strong>Kdy:</strong> 1.11.2025 od 19:00</p>
-      <p><strong>Kde:</strong> Parkhotel Plzeň</p>
-      <p><strong>Kdo:</strong> Třídy IT4B & 4SCB</p>
+    <header>
+      <section class="header-nav">
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#uvod">Úvod</a></li>
+            <li><a href="#info">Základní info</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#maturanti">Maturanti</a></li>
+            <li><a href="#ceny">Ceny lístků</a></li>
+            <li><a href="#ucitele">Učitelé</a></li>
+            <li><a href="#sponzori">Sponzoři</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
-    <section id="program">
-      <h2>Program večera</h2>
-      <ul>
-        <li>Program</li>
-      </ul>
-    </section>
+    <main>
+      <section id="uvod" class="hero">
+        <h1>Pařba ve Vegas Maturitní ples 2025</h1>
+        <p>
+          Přijďtě se uplně zničit a zasmát se, náš maturitní ples vám zničí
+          mozkové buňky
+        </p>
+        <a href="#ceny" class="btn">Koupit lístky</a>
+      </section>
 
-    <section id="maturanti">
-      <h2>Seznam maturantů</h2>
-      <p>Zde bude seznam studentů, kteří budou stužkováni.</p>
-      <ul>
-        <li>Adam Lavrikov</li>
-      </ul>
-    </section>
+      <section class="info">
+        <h2>Informace</h2>
+        <h3>Lokace, čas, kdo a proč maturitního plesu:</h3>
+        <ul class="event-info">
+          <li>
+            Parkhotel U Borského parku 2791, 320 04 Plzeň 3-Jižní Předměstí
+          </li>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2579.479743441877!2d13.370958600000002!3d49.720595499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470aee137fc8c8ab%3A0xb68ed059455373cb!2sCongress%20Center%20Parkhotel%20Plze%C5%88!5e0!3m2!1scs!2scz!4v1758005201718!5m2!1scs!2scz"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <li>Dne <b>1.11.2025</b> v <b>19:00</b></li>
+          <li>
+            Pořádamé to my IT4B a 4SCB. <a href="#maturanti">Maturanti</a>
+          </li>
+          <li>
+            Pořadámé to z jednoduchého důvodu. Prošli jsme psychárnou a jdeme si
+            pro papír, který nás osvobodí od psychárny (školy).
+          </li>
+        </ul>
+      </section>
 
-    <section id="ceny">
-      <h2>Ceny vstupenek</h2>
-      <ul>
-        <li>Stání: 300Kč</li>
-        <li>Sezení: 350-400Kč</li>
-      </ul>
-    </section>
+      <section class="program">
+        <h2>Program večera</h2>
+        <ul class="event-program">
+          <li></li>
+        </ul>
+      </section>
 
-    <section id="sponzori">
-      <h2>Sponzoři</h2>
-      <p>Děkujeme partnerům, kteří ples podpořili:</p>
-      <div class="sponsors">
-        <img src="img/sponsor1.png" alt="Sponzor 1" />
-        <img src="img/sponsor2.png" alt="Sponzor 2" />
-      </div>
-    </section>
+      <section class="maturanti">
+        <h2>Maturanti</h2>
+        <table border="1" cellspacing="0" cellpadding="5">
+          <thead>
+            <tr>
+              <th>Chlapci</th>
+              <th>Dívky</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BOCK Daniel</td>
+              <td>Bílá Anastázie</td>
+            </tr>
+            <tr>
+              <td>BOYANOV Borislav</td>
+              <td>Burdová Natálie</td>
+            </tr>
+            <tr>
+              <td>BRUNCLÍK Martin</td>
+              <td>Heclová Julie</td>
+            </tr>
+            <tr>
+              <td>ČONKA Gabriel</td>
+              <td>Herejková Kristýna</td>
+            </tr>
+            <tr>
+              <td>DEMIANENKO Roman</td>
+              <td>Hřebíková Aneta</td>
+            </tr>
+            <tr>
+              <td>FEDOROV Marat</td>
+              <td>Janková Anna</td>
+            </tr>
+            <tr>
+              <td>FIKRLE Vítek</td>
+              <td>Jirsová Vladimíra</td>
+            </tr>
+            <tr>
+              <td>GEMEĽA Ivan</td>
+              <td>Kanalošová Hana</td>
+            </tr>
+            <tr>
+              <td>HOLÝ Daniel</td>
+              <td>Mrázová Aneta</td>
+            </tr>
+            <tr>
+              <td>KAVNJANYK Alexander</td>
+              <td>Nguyen Quang Truong</td>
+            </tr>
+            <tr>
+              <td>KIRPAL Jan</td>
+              <td>Novotná Eliška</td>
+            </tr>
+            <tr>
+              <td>KOŘÍNSKÝ Jakub</td>
+              <td>Pfeiferová Linda</td>
+            </tr>
+            <tr>
+              <td>KOUKOLÍK Daniel</td>
+              <td>Pivoňková Veronika</td>
+            </tr>
+            <tr>
+              <td>LAVIČKA David</td>
+              <td>Prskavcová Adéla</td>
+            </tr>
+            <tr>
+              <td>LAVRIKOV Adam</td>
+              <td>Sedláková Barbora</td>
+            </tr>
+            <tr>
+              <td>NGUYEN Cong Tien Dung</td>
+              <td>Šambergrová Julie</td>
+            </tr>
+            <tr>
+              <td>OPATRNÝ Šimon</td>
+              <td>Šedivcová Natálie</td>
+            </tr>
+            <tr>
+              <td>ŠTICHA David</td>
+              <td>Štědrá Eva</td>
+            </tr>
+            <tr>
+              <td>TOPOROVSKA Daryna</td>
+              <td>Šváchová Eva</td>
+            </tr>
+            <tr>
+              <td>VAŠMUCIUS Vojtěch</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>VEVERKA Tobiáš</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>VLČEK Jakub</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>VOSTATEK Václav</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>ZEMAN Daniel</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <img src="#" alt="Třídní fotka #1" />
+        <img src="#" alt="Třídní fotka #2" />
+      </section>
 
-    <section id="skola">
-      <h2>O naší škole</h2>
-      <p>
-        Střední odborné učiliště, Střední průmyslová škola strojnická a SOŠ
-        profesora Švejcara
-      </p>
-    </section>
+      <section class="ceny">
+        <h2>Ceny lístku</h2>
+        <ul class="ticket-prices">
+          <li>Stání: 350,-</li>
+          <li>Sezení: 400,-</li>
+        </ul>
+      </section>
 
-    <section id="ucitele">
-      <h2>Naši učitelé</h2>
-      <p>Můžeme přidat fotky učitelů</p>
-    </section>
+      <section class="ucitele">
+        <h2>Učitele</h2>
+        <ul>
+          <li>Ing. Zedníkova Lenka</li>
+          <li>Kovářík Jakub</li>
+          <li>Mgr. Hašková Renata</li>
+          <li>Mgr. Schejbalová Veronika</li>
+          <li>Mgr. Bláhová Kateřina</li>
+          <li>Mgr. Kůsova Šárka</li>
+          <li>Kkt. Zábrodský Martin</li>
+          <li>Mgr. Bezděka Jan Pgd.</li>
+          <li>Mgr. Šilhánek Michal</li>
+          <li>Mgr. Breit Petr</li>
+        </ul>
+      </section>
 
-    <section id="videa">
-      <h2>Videa z nácviku</h2>
-      <video controls>
-        <source src="video/nacvik.mp4" type="video/mp4" />
-        Váš prohlížeč nepodporuje video.
-      </video>
-    </section>
+      <section class="sponzori">
+        <h2>Sponzoři</h2>
+        <ul class="sponsors-list">
+          <li></li>
+        </ul>
+      </section>
 
-    <footer id="kontakt">
-      <h2>Kontakt</h2>
-      <p>
-        Máte dotaz? Napište nám:
-        <a href="mailto:maturak2025@example.com">maturak2025@example.com</a>
-      </p>
-      <p>Sledujte nás na:</p>
-      <ul class="socials">
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">TikTok</a></li>
-        <li><a href="#">Facebook</a></li>
-      </ul>
+      <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Email: <a href="mailto:ples@souepl.cz">ples@souepl.cz</a></p>
+        <p>Telefon: +420 123 456 789</p>
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Facebook</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 SOUEPL Maturitní ples</p>
     </footer>
   </body>
 </html>
