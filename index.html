@@ -11,6 +11,11 @@
     <header>
       <section class="header-nav">
         <nav>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <ul class="nav-list">
             <li><a href="#uvod">Úvod</a></li>
             <li><a href="#info">Základní info</a></li>
@@ -35,7 +40,7 @@
         <a href="#ceny" class="btn">Koupit lístky</a>
       </section>
 
-      <section class="info">
+      <section id="info" class="info">
         <h2>Informace</h2>
         <h3>Lokace, čas, kdo a proč maturitního plesu:</h3>
         <ul class="event-info">
@@ -62,14 +67,14 @@
         </ul>
       </section>
 
-      <section class="program">
+      <section id="program" class="program">
         <h2>Program večera</h2>
         <ul class="event-program">
           <li></li>
         </ul>
       </section>
 
-      <section class="maturanti">
+      <section id="maturanti" class="maturanti">
         <h2>Maturanti</h2>
         <table border="1" cellspacing="0" cellpadding="5">
           <thead>
@@ -181,38 +186,80 @@
         <img src="#" alt="Třídní fotka #2" />
       </section>
 
-      <section class="ceny">
+      <section id="ceny" class="ceny">
         <h2>Ceny lístku</h2>
         <ul class="ticket-prices">
           <li>Stání: 350,-</li>
           <li>Sezení: 400,-</li>
         </ul>
+        <p>
+          Pokud si chcete koupit lístek kontaktujte nás na socialních sítich
+          nebo email.
+        </p>
       </section>
 
-      <section class="ucitele">
-        <h2>Učitele</h2>
-        <ul>
-          <li>Ing. Zedníkova Lenka</li>
-          <li>Kovářík Jakub</li>
-          <li>Mgr. Hašková Renata</li>
-          <li>Mgr. Schejbalová Veronika</li>
-          <li>Mgr. Bláhová Kateřina</li>
-          <li>Mgr. Kůsova Šárka</li>
-          <li>Kkt. Zábrodský Martin</li>
-          <li>Mgr. Bezděka Jan Pgd.</li>
-          <li>Mgr. Šilhánek Michal</li>
-          <li>Mgr. Breit Petr</li>
-        </ul>
+      <section id="ucitele" class="ucitele">
+        <h2>Učitelé, kteří nás učili</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Učitelé IT4B</th>
+              <th>Učitelé 4SCB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ing. Zedníkova Lenka</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kovářík Jakub</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mgr. Hašková Renata</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mgr. Schejbalová Veronika</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mgr. Bláhová Kateřina</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mgr. Kůsova Šárka</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kkt. Zábrodský Martin</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mgr. Bezděka Jan Pgd.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mgr. Šilhánek Michal</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mgr. Breit Petr</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
-      <section class="sponzori">
+      <section id="sponzori" class="sponzori">
         <h2>Sponzoři</h2>
         <ul class="sponsors-list">
           <li></li>
         </ul>
       </section>
 
-      <section id="kontakt">
+      <section id="kontakt" class="kontakt">
         <h2>Kontakt</h2>
         <p>Email: <a href="mailto:ples@souepl.cz">ples@souepl.cz</a></p>
         <p>Telefon: +420 123 456 789</p>

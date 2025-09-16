@@ -5,9 +5,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background-color: #0a0a0a;
+  background: #0a0a0a;
   color: #f5f5f5;
   line-height: 1.6;
   overflow-x: hidden;
@@ -44,11 +48,11 @@ header {
 .nav-list a::after {
   content: "";
   position: absolute;
-  width: 0%;
+  width: 0;
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #d4af37;
+  background: #d4af37;
   transition: width 0.3s ease-in-out;
 }
 
@@ -62,7 +66,7 @@ header {
 
 /* === Hero sekce === */
 .hero {
-  background: url("../img/hero-bg.jpg") center/cover no-repeat;
+  background: url("/images.jpeg") center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -80,7 +84,9 @@ header {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.hero h1, .hero p, .hero .btn {
+.hero h1,
+.hero p,
+.hero .btn {
   position: relative;
   z-index: 1;
 }
@@ -120,10 +126,17 @@ header {
 
 /* === Sekce === */
 section {
-  padding: 4rem 2rem;
+  padding: 2rem;
   max-width: 1100px;
   margin: 0 auto;
-  animation: fadeInUp 1.5s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h2 {
@@ -180,8 +193,9 @@ h2::after {
   background: rgba(212, 175, 55, 0.1);
 }
 
-/* === Maturanti tabulka === */
-.maturanti table {
+/* === Tabulky (Maturanti + Učitelé) === */
+.maturanti table,
+.ucitele table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
@@ -191,26 +205,33 @@ h2::after {
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
 }
 
-.maturanti th, .maturanti td {
-  padding: 0.8rem;
-  text-align: left;
+.maturanti th,
+.maturanti td,
+.ucitele th,
+.ucitele td {
+  padding: 0.8rem 1rem;
   border: 1px solid #333;
+  text-align: center;
 }
 
-.maturanti th {
+.maturanti th,
+.ucitele th {
   background: #d4af37;
   color: #111;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
-.maturanti tr:nth-child(even) {
+.maturanti tr:nth-child(even),
+.ucitele tr:nth-child(even) {
   background: #222;
 }
 
-.maturanti tr:hover {
+.maturanti tr:hover,
+.ucitele tr:hover {
   background: rgba(212, 175, 55, 0.1);
-  transition: 0.3s;
+  transition: background 0.3s ease;
 }
 
 .maturanti img {
@@ -247,23 +268,64 @@ h2::after {
   transform: translateY(-3px);
 }
 
-/* === Kontakt + sociální sítě === */
+/* === Kontakt === */
+.kontakt {
+  text-align: center;
+  background: linear-gradient(to bottom, #0a0a0a, #111);
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  animation: fadeInUp 1.5s ease;
+}
+
+.kontakt h2 {
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.kontakt p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.kontakt a {
+  color: #d4af37;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+}
+
+.kontakt a:hover {
+  color: #fff;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #d4af37;
+}
+
+/* === Socials === */
 .socials {
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .socials a {
+  background: #1a1a1a;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #d4af37;
+  border-radius: 30px;
   color: #d4af37;
   font-weight: bold;
   text-decoration: none;
-  transition: transform 0.3s, color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .socials a:hover {
-  color: #fff;
-  transform: scale(1.1);
+  background: #d4af37;
+  color: #111;
+  box-shadow: 0 0 15px #d4af37;
+  transform: translateY(-3px);
 }
 
 /* === Footer === */
@@ -273,6 +335,37 @@ footer {
   background: #000;
   color: #aaa;
   font-size: 0.9rem;
+}
+
+/* === Hamburger === */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #d4af37;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* === Animace === */
@@ -292,21 +385,34 @@ footer {
 }
 
 /* === Responsivita === */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+    z-index: 1100;
+  }
+
   .nav-list {
-    flex-wrap: wrap;
-    gap: 1rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.3s ease-in-out;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
+  .nav-list.active {
+    right: 0;
   }
 
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .maturanti img {
-    max-width: 100%;
+  .nav-list a {
+    font-size: 1.3rem;
   }
 }
